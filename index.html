@@ -1,398 +1,457 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DermCare Clinic · Δερματολόγος Demo</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="topbar">
-    <div class="shell topbar-inner">
-      <p>Δερματολόγος – Αφροδισιολόγος | Αθήνα</p>
-      <p>Τηλ: <a href="tel:2100000000">210 000 0000</a></p>
-    </div>
-  </header>
-
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a href="#hero" class="logo">Derm<span>Care</span></a>
-
-      <button class="nav-toggle" aria-label="Άνοιγμα μενού">
-        <span></span><span></span>
-      </button>
-
-      <nav class="nav">
-        <ul>
-          <li><a href="#conditions">Προβλήματα δέρματος</a></li>
-          <li><a href="#aesthetics">Αισθητική</a></li>
-          <li><a href="#journey">Πορεία θεραπείας</a></li>
-          <li><a href="#doctor">Η γιατρός</a></li>
-          <li><a href="#contact" class="nav-cta">Κλείσε ραντεβού</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <div class="hero-tagline">Ιατρική & Αισθητική Δερματολογία</div>
-          <h1>
-            Δέρμα ήρεμο,<br />
-            όχι απλώς «τέλειο».
-          </h1>
-          <p class="hero-text">
-            Ιατρείο που συνδυάζει κλινική δερματολογία με προσεκτική αισθητική
-            παρέμβαση. Εξατομικευμένα πλάνα για ακμή, ερυθρότητα, γήρανση
-            και έλεγχο σπίλων.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn-primary">Κλείσε online ραντεβού</a>
-            <button class="btn-ghost" type="button">
-              Δες αν σε αφορά
-            </button>
-          </div>
-
-          <div class="hero-badges">
-            <span>Ακμή ενηλίκων & εφήβων</span>
-            <span>Skin check & σπίλοι</span>
-            <span>Botox & fillers με φυσικό αποτέλεσμα</span>
-          </div>
-        </div>
-
-        <div class="hero-side">
-          <!-- Placeholder φωτογραφίας με διακριτικό τρίγωνο -->
-          <div class="image-slot image-hero image-triangle" aria-hidden="true"></div>
-
-          <div class="hero-card">
-            <p class="hero-card-title">Online αίτημα ραντεβού</p>
-            <ul>
-              <li>Απάντηση μέσα σε 24 ώρες</li>
-              <li>Συνοπτικό ιστορικό πριν έρθεις</li>
-              <li>Υπενθύμιση με SMS/Email</li>
-            </ul>
-            <a href="#contact" class="hero-card-link">Ξεκίνα με τη φόρμα →</a>
-          </div>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>DermCare Clinic – Δερματολόγος | Αθήνα</title>
+    <meta
+      name="description"
+      content="Ιατρική & Αισθητική Δερματολογία με ήπια, εξατομικευμένη προσέγγιση. Ακμή, ερυθρότητα, αλλεργίες, έλεγχος σπίλων."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="shell topbar-inner">
+        <span>Δερματολόγος – Αφροδισιολόγος | Αθήνα</span>
+        <a href="tel:2100000000">Τηλ: 210 000 0000</a>
       </div>
-    </section>
+    </div>
 
-    <!-- CONDITIONS (Προβλήματα δέρματος) -->
-    <section id="conditions" class="section">
-      <div class="shell">
-        <div class="section-head">
-          <h2>Τι αντιμετωπίζουμε πιο συχνά</h2>
-          <p>
-            Δουλεύουμε καθημερινά με ανθρώπους που ταλαιπωρούνται από χρόνια
-            δερματολογικά προβλήματα και θέλουν επιτέλους ένα καθαρό πλάνο.
-          </p>
-        </div>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a href="#top" class="logo">Derm<span>Care</span></a>
 
-        <div class="conditions-grid">
-          <article class="condition-card">
-            <h3>Ακμή & ουλές</h3>
-            <p>
-              Εφηβική και ακμή ενηλίκων, επίμονες βλάβες, λιπαρό δέρμα, σημάδια
-              από παλαιότερες εξάρσεις.
-            </p>
-            <ul>
-              <li>Συνδυασμός τοπικών & από του στόματος θεραπειών</li>
-              <li>Laser & θεραπείες για ουλές</li>
-              <li>Καθαρό πλάνο φροντίδας στο σπίτι</li>
-            </ul>
-          </article>
+        <nav class="nav" aria-label="Κύρια πλοήγηση">
+          <ul>
+            <li><a href="#conditions">Προβλήματα δέρματος</a></li>
+            <li><a href="#aesthetic">Αισθητική</a></li>
+            <li><a href="#journey">Πορεία θεραπείας</a></li>
+            <li><a href="#doctor">Η γιατρός</a></li>
+            <li><a href="#contact" class="nav-cta">Κλείσε ραντεβού</a></li>
+          </ul>
+        </nav>
 
-          <article class="condition-card">
-            <h3>Ερυθρότητα & ευαισθησία</h3>
-            <p>
-              Ροδόχρους νόσος, κοκκινίλες, ευρυαγγείες, δέρμα που αντιδρά «σε
-              όλα».
-            </p>
-            <ul>
-              <li>Συγκεκριμένη διάγνωση, όχι απλώς «ευαισθησία»</li>
-              <li>Laser & στοχευμένες κρέμες</li>
-              <li>Οδηγίες για καθημερινά triggers</li>
-            </ul>
-          </article>
-
-          <article class="condition-card">
-            <h3>Έλεγχος σπίλων & πρόληψη</h3>
-            <p>
-              Χαρτογράφηση σπίλων, παρακολούθηση βλαβών, εκτίμηση κινδύνου
-              ανά τύπο δέρματος.
-            </p>
-            <ul>
-              <li>Ετήσιο skin check</li>
-              <li>Ψηφιακή παρακολούθηση σημείων</li>
-              <li>Συμβουλές για αντηλιακή προστασία</li>
-            </ul>
-          </article>
-
-          <article class="condition-card">
-            <h3>Δερματίτιδες & αλλεργίες</h3>
-            <p>
-              Έκζεμα, ατοπική δερματίτιδα, αλλεργικές αντιδράσεις, ερεθισμοί
-              από προϊόντα.
-            </p>
-            <ul>
-              <li>Εντοπισμός ερεθιστικών παραγόντων</li>
-              <li>Σχέδιο αντιμετώπισης flare-ups</li>
-              <li>Προτάσεις για ασφαλή προϊόντα</li>
-            </ul>
-          </article>
-        </div>
+        <button class="nav-toggle" aria-label="Άνοιγμα μενού">
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <!-- AESTHETIC DERMATOLOGY -->
-    <section id="aesthetics" class="section section-soft">
-      <div class="shell">
-        <div class="section-head">
-          <h2>Αισθητική δερματολογία χωρίς υπερβολές</h2>
-          <p>
-            Αντιμετωπίζουμε τις ρυτίδες και τη χαλάρωση όπως κάθε ιατρικό
-            πρόβλημα: με μέτρο, σχέδιο και στόχο ένα πρόσωπο που «δείχνει
-            ξεκούραστο», όχι διαφορετικό.
-          </p>
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero section-soft" id="hero">
+        <div class="shell hero-grid">
+          <div class="hero-main">
+            <div class="hero-tagline">
+              <span>Ιατρική &amp; Αισθητική Δερματολογία</span>
+            </div>
+
+            <h1>Δέρμα ήρεμο, όχι απλώς «τέλειο».</h1>
+
+            <p class="hero-text">
+              Ιατρείο που συνδυάζει κλινική δερματολογία με προσεκτική αισθητική
+              παρέμβαση. Εξατομικευμένα πλάνα για ακμή, ερυθρότητα, γήρανση και
+              έλεγχο σπίλων.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary">Κλείσε online ραντεβού</a>
+              <a href="#aesthetic" class="btn-ghost">Δες αν σε αφορά</a>
+            </div>
+
+            <div class="hero-badges">
+              <span>Ακμή ενηλίκων &amp; εφήβων</span>
+              <span>Skin check &amp; σπίλοι</span>
+              <span>Botox &amp; fillers με φυσικό αποτέλεσμα</span>
+            </div>
+          </div>
+
+          <aside class="hero-side" aria-label="Online αίτημα ραντεβού">
+            <div class="image-slot image-hero image-triangle"></div>
+
+            <div class="hero-card">
+              <h2 class="hero-card-title">Online αίτημα ραντεβού</h2>
+              <p class="hero-card-sub">
+                Συμπλήρωσε τη σύντομη φόρμα και θα σου απαντήσουμε
+                προσωπικά μέσα σε 24 ώρες.
+              </p>
+              <ul class="hero-card-list">
+                <li>Απάντηση μέσα σε 24 ώρες</li>
+                <li>Συνοπτικό ιστορικό πριν έρθεις</li>
+                <li>Υπενθύμιση με SMS / Email</li>
+              </ul>
+              <a href="#contact" class="hero-card-link">
+                Ξεκίνα με τη φόρμα &rarr;
+              </a>
+            </div>
+          </aside>
         </div>
+      </section>
 
-        <div class="aesthetic-layout">
+      <!-- CONDITIONS -->
+      <section class="section" id="conditions">
+        <div class="shell">
+          <header class="section-head">
+            <h2>Τι αντιμετωπίζουμε πιο συχνά</h2>
+            <p>
+              Δουλεύουμε καθημερινά με ανθρώπους που ταλαιπωρούνται από χρόνια
+              δερματολογικά προβλήματα και θέλουν επιτέλους ένα καθαρό πλάνο.
+            </p>
+          </header>
+
+          <div class="conditions-grid">
+            <article class="condition-card">
+              <h3>Ακμή &amp; ουλές</h3>
+              <p>
+                Ενηλίκων και εφηβική ακμή, επίμονες βλάβες, λεπτοί φραγμένοι
+                πόροι.
+              </p>
+              <ul>
+                <li>Συνδυασμός τοπικών &amp; από του στόματος θεραπειών</li>
+                <li>Εξατομικευμένα χημικά peelings</li>
+                <li>Στόχος: ήρεμο δέρμα όλο τον μήνα</li>
+              </ul>
+            </article>
+
+            <article class="condition-card">
+              <h3>Ερυθρότητα &amp; ευαισθησία</h3>
+              <p>
+                Ροδόχρους νόσος, ευρυαγγείες, ερεθισμοί από μάσκες και προϊόντα.
+              </p>
+              <ul>
+                <li>Αναλυτική αξιολόγηση αγγειακών βλαβών</li>
+                <li>Σχέδιο φροντίδας στο σπίτι</li>
+                <li>Οδηγίες για ήπια καθημερινή ρουτίνα</li>
+              </ul>
+            </article>
+
+            <article class="condition-card">
+              <h3>Έλεγχος σπίλων &amp; πρόληψη</h3>
+              <p>
+                Χαρτογράφηση σπίλων, αξιολόγηση βλαβών, εκτίμηση κινδύνου.
+              </p>
+              <ul>
+                <li>Δερματοσκόπηση υψηλής ανάλυσης</li>
+                <li>Φωτογράφηση για σύγκριση στο χρόνο</li>
+                <li>Συμβουλές για ασφαλή έκθεση στον ήλιο</li>
+              </ul>
+            </article>
+
+            <article class="condition-card">
+              <h3>Δερματίτιδες &amp; αλλεργίες</h3>
+              <p>
+                Έκζεμα, ατοπική δερματίτιδα, αλλεργικές αντιδράσεις, εξανθήματα.
+              </p>
+              <ul>
+                <li>Διερεύνηση πιθανών ερεθιστικών παραγόντων</li>
+                <li>Εξατομικευμένο πλάνο αγωγής</li>
+                <li>Πρόταση για ασφαλή προϊόντα</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- AESTHETIC -->
+      <section class="section section-soft" id="aesthetic">
+        <div class="shell aesthetic-layout">
           <div class="aesthetic-copy">
+            <header class="section-head align-left">
+              <h2>Αισθητική δερματολογία χωρίς υπερβολές</h2>
+              <p>
+                Αντιμετωπίζουμε τις ρυτίδες και τη χαλάρωση όπως κάθε ιατρικό
+                πρόβλημα: με μέτρο, σχέδιο και στόχο ένα πρόσωπο που «δείχνει
+                ξεκούραστο».
+              </p>
+            </header>
+
             <div class="pill-row">
-              <span class="pill">Botox για φυσική έκφραση</span>
-              <span class="pill">Υαλουρονικό για όγκο & ενυδάτωση</span>
-              <span class="pill">Skinboosters & μεσοθεραπεία</span>
+              <span class="pill">Botox για έκφραση, όχι για «πάγωμα»</span>
+              <span class="pill">Υαλουρονικό μόνο εκεί που χρειάζεται</span>
             </div>
 
             <ul class="aesthetic-list">
               <li>
-                <strong>Σύντομη διάγνωση, όχι «προσφορές».</strong> Πριν γίνει
-                οτιδήποτε, εξετάζουμε το πρόσωπό σου, τις συνήθειες και τις
-                προσδοκίες σου.
+                <strong>Σύντομη διάγνωση, όχι «προσφορά».</strong> Πριν γίνει
+                οποιαδήποτε αισθητική πράξη, εξηγούμε τι ταιριάζει στο δικό σου
+                πρόσωπο.
               </li>
               <li>
-                <strong>Μίνι παρεμβάσεις, σταδιακά.</strong> Προτιμούμε μικρά,
-                ασφαλή βήματα αντί για δραστικές αλλαγές.
+                <strong>Μικρές παρεμβάσεις, φυσικό αποτέλεσμα.</strong> Στόχος
+                να ακούς «δείχνεις ξεκούραστη», όχι «τι έκανες;».
               </li>
               <li>
-                <strong>Συνεχής παρακολούθηση.</strong> Φωτογραφική καταγραφή,
-                follow-up και προσαρμογές στο πλάνο.
+                <strong>Συνδυασμός με ιατρική φροντίδα.</strong> Αντιμετωπίζουμε
+                παράλληλα ευαισθησίες, ακμή, δυσχρωμίες.
               </li>
             </ul>
-          </div>
 
-          <div class="aesthetic-media">
-            <!-- Placeholder φωτογραφίας με τρίγωνο -->
-            <div class="image-slot image-triangle image-aesthetic" aria-hidden="true"></div>
             <p class="aesthetic-caption">
-              Πραγματικά περιστατικά, με σεβασμό στην ανωνυμία και χωρίς
-              επεξεργασία.
+              Ενημερωμένη, σταδιακή προσέγγιση – χωρίς εκπλήξεις, χωρίς
+              υπερβολές.
+            </p>
+          </div>
+
+          <div class="image-slot image-aesthetic image-triangle"></div>
+        </div>
+      </section>
+
+      <!-- JOURNEY -->
+      <section class="section" id="journey">
+        <div class="shell">
+          <header class="section-head">
+            <h2>Πώς είναι να ξεκινάς μαζί μας</h2>
+            <p>
+              Θέλουμε να ξέρεις ακριβώς τι να περιμένεις – από το πρώτο μήνυμα
+              μέχρι την επανεξέταση.
+            </p>
+          </header>
+
+          <div class="journey-grid">
+            <article class="step">
+              <div class="step-number">1</div>
+              <h3>Σύντομη online εικόνα</h3>
+              <p>
+                Συμπληρώνεις τη φόρμα με τα βασικά, στέλνεις φωτογραφίες εφόσον
+                χρειάζεται, και οργανώνουμε το πρώτο ραντεβού.
+              </p>
+            </article>
+
+            <article class="step">
+              <div class="step-number">2</div>
+              <h3>Πρώτη επίσκεψη στο ιατρείο</h3>
+              <p>
+                Κλινική εξέταση, λήψη ιστορικού και, όπου χρειάζεται,
+                δερματοσκόπηση ή περαιτέρω διερεύνηση.
+              </p>
+            </article>
+
+            <article class="step">
+              <div class="step-number">3</div>
+              <h3>Προσωπικό πλάνο φροντίδας</h3>
+              <p>
+                Γραπτές οδηγίες, πλάνο θεραπειών και προϊόντων προσαρμοσμένο στο
+                καθημερινό σου πρόγραμμα.
+              </p>
+            </article>
+
+            <article class="step">
+              <div class="step-number">4</div>
+              <h3>Follow-up &amp; προσαρμογές</h3>
+              <p>
+                Επικοινωνία μέσω email ή τηλεφώνου και επανέλεγχος ώστε να
+                προσαρμόζουμε την αγωγή ανάλογα με τις ανάγκες.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCTOR -->
+      <section class="section section-soft" id="doctor">
+        <div class="shell doctor-grid">
+          <div class="image-slot image-doctor image-triangle"></div>
+
+          <div class="doctor-copy">
+            <header class="section-head align-left">
+              <h2>Δρ. Άννα Παπαδοπούλου</h2>
+              <p class="doctor-role">
+                Δερματολόγος – Αφροδισιολόγος
+              </p>
+            </header>
+
+            <p>
+              Εξειδικευμένη δερματολόγος με κλινικές σπουδές στην Ευρώπη και
+              πολυετή εμπειρία σε ιδιωτικά ιατρεία. Η φιλοσοφία της είναι ότι
+              κάθε δέρμα είναι «αρχείο» – χρειάζεται παρατήρηση, χρόνο και
+              συνέπεια.
+            </p>
+
+            <ul class="doctor-list">
+              <li>Εμπειρία σε ακμή ενηλίκων και σύνθετα περιστατικά</li>
+              <li>Ιδιαίτερη ενασχόληση με ευαίσθητα δέρματα &amp; ροδόχρου νόσο</li>
+              <li>Αισθητικές θεραπείες με φυσικό, διακριτικό αποτέλεσμα</li>
+            </ul>
+
+            <p>
+              Στόχος της είναι ένα ήρεμο, λειτουργικό δέρμα – όχι μια στιγμιαία
+              «τέλεια» φωτογραφία.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- JOURNEY (Πορεία θεραπείας) -->
-    <section id="journey" class="section">
-      <div class="shell">
-        <div class="section-head">
-          <h2>Πώς είναι να ξεκινάς μαζί μας</h2>
-          <p>
-            Θέλουμε να ξέρεις ακριβώς τι να περιμένεις – από το πρώτο μήνυμα
-            μέχρι την επανεξέταση.
-          </p>
-        </div>
-
-        <div class="journey-grid">
-          <article class="step">
-            <span class="step-number">1</span>
-            <h3>Σύντομη online εικόνα</h3>
+      <!-- FAQ STRIP -->
+      <section class="section">
+        <div class="shell mini-faq">
+          <article class="mini-faq-item">
+            <h3>Χρειάζεται παραπεμπτικό;</h3>
             <p>
-              Συμπληρώνεις τη φόρμα, στέλνεις (αν θέλεις) μερικές καθαρές
-              φωτογραφίες χωρίς φίλτρα και περιγράφεις τι σε ενοχλεί.
+              Όχι, μπορείς να κλείσεις απευθείας ραντεβού, με ή χωρίς ιδιωτική
+              ασφάλεια.
             </p>
           </article>
-
-          <article class="step">
-            <span class="step-number">2</span>
-            <h3>Πρώτη επίσκεψη στο ιατρείο</h3>
+          <article class="mini-faq-item">
+            <h3>Γίνονται θεραπείες την ίδια μέρα;</h3>
             <p>
-              Αναλυτικό ιστορικό, κλινική εξέταση, πιθανές φωτογραφίες και
-              συζήτηση για ρεαλιστικές επιλογές θεραπείας.
+              Σε πολλές περιπτώσεις ναι, εφόσον το επιτρέπει η κλινική εικόνα
+              και η αγωγή που ήδη λαμβάνεις.
             </p>
           </article>
-
-          <article class="step">
-            <span class="step-number">3</span>
-            <h3>Προσωπικό πλάνο φροντίδας</h3>
+          <article class="mini-faq-item">
+            <h3>Προσφέρετε online συμβουλευτική;</h3>
             <p>
-              Γραπτό πλάνο με βήματα, προϊόντα, συχνότητα θεραπειών και
-              χρονοδιάγραμμα για να ξέρεις πού πηγαίνουμε.
-            </p>
-          </article>
-
-          <article class="step">
-            <span class="step-number">4</span>
-            <h3>Follow-up & προσαρμογές</h3>
-            <p>
-              Τακτικά ραντεβού, έλεγχος προόδου και προσαρμογή του πλάνου ανάλογα
-              με την ανταπόκριση του δέρματος.
+              Για επαναληπτικά περιστατικά ή απλές απορίες μπορεί να γίνει
+              τηλεσυμβουλευτική, όπου είναι ιατρικά ασφαλές.
             </p>
           </article>
         </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section-contact" id="contact">
+        <div class="shell">
+          <header class="section-head align-left">
+            <h2>Κλείσε ραντεβού</h2>
+            <p>
+              Άφησέ μας μερικές λεπτομέρειες για το δέρμα σου και θα
+              επικοινωνήσουμε μαζί σου για να βρούμε την κατάλληλη μέρα &amp;
+              ώρα.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-block">
+                <h3>Διεύθυνση</h3>
+                <p>
+                  Οδός Παράδειγμα 12, Κέντρο, Αθήνα<br />
+                  Πλησίον μετρό Πανεπιστήμιο
+                </p>
+              </div>
+
+              <div class="contact-block">
+                <h3>Επικοινωνία</h3>
+                <p>
+                  Τηλέφωνο: <a href="tel:2100000000">210 000 0000</a><br />
+                  Email:
+                  <a href="mailto:info@dermcareclinic.gr"
+                    >info@dermcareclinic.gr</a
+                  >
+                </p>
+              </div>
+
+              <div class="contact-block">
+                <h3>Ωράριο ιατρείου</h3>
+                <p>
+                  Δευτέρα – Παρασκευή: 10:00 – 19:00<br />
+                  Σάββατο: κατόπιν ραντεβού
+                </p>
+              </div>
+
+              <p class="contact-note">
+                Demo site για portfolio. Το περιεχόμενο είναι ενδεικτικό και δεν
+                αντικαθιστά την ιατρική εξέταση.
+              </p>
+            </div>
+
+            <form class="contact-form">
+              <div class="field">
+                <label for="name">Ονοματεπώνυμο</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Π.χ. Μαρία Παπαδοπούλου"
+                />
+              </div>
+
+              <div class="field field-inline">
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label for="phone">Τηλέφωνο</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    placeholder="Π.χ. 69x xxx xxxx"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="reason">Τι σε απασχολεί περισσότερο;</label>
+                <select id="reason" name="reason">
+                  <option value="">Επίλεξε μια επιλογή</option>
+                  <option value="acne">Ακμή / σπυράκια</option>
+                  <option value="redness">Ερυθρότητα / ευαισθησία</option>
+                  <option value="moles">Σπίλοι / έλεγχος</option>
+                  <option value="aesthetic">Αισθητική θεραπεία</option>
+                  <option value="other">Κάτι άλλο</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Μήνυμα (προαιρετικά)</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Μπορείς να περιγράψεις συνοπτικά τι σε απασχολεί ή αν υπάρχει κάποια συγκεκριμένη ερώτηση."
+                ></textarea>
+              </div>
+
+              <p class="form-note">
+                Με την αποστολή της φόρμας δεν κλείνεται αυτόματα ραντεβού. Θα
+                επικοινωνήσουμε μαζί σου για επιβεβαίωση ημέρας και ώρας.
+              </p>
+
+              <button type="submit" class="btn-primary full">
+                Αποστολή αίτησης
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p class="footer-brand">Derm<span>Care</span> Clinic</p>
+        <p class="footer-text">
+          Demo site για portfolio. Δεν παρέχει ιατρικές υπηρεσίες.
+        </p>
+        <p class="footer-meta">
+          © 2025 DermCare Clinic • Όλα τα δικαιώματα διατηρούνται.
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- DOCTOR -->
-    <section id="doctor" class="section section-soft">
-      <div class="shell doctor-grid">
-        <div class="doctor-media">
-          <!-- Placeholder φωτογραφίας γιατρού με τρίγωνο -->
-          <div class="image-slot image-triangle image-doctor" aria-hidden="true"></div>
-        </div>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const body = document.body;
 
-        <div class="doctor-copy">
-          <h2>Δρ. Άννα Παπαδοπούλου</h2>
-          <p class="doctor-role">Δερματολόγος – Αφροδισιολόγος</p>
-          <p>
-            Εκπαιδευμένη σε πανεπιστημιακές κλινικές στην Ευρώπη και σε
-            κέντρα δερματολογίας στις ΗΠΑ, με εστίαση στην ακμή ενηλίκων,
-            τις δερματίτιδες και την αισθητική δερματολογία με φυσικό
-            αποτέλεσμα.
-          </p>
-          <p>
-            Πιστεύει ότι το δέρμα δεν είναι «τέλειο» ή «χάλια», αλλά ζωντανό
-            όργανο που επηρεάζεται από ορμόνες, στρες, ύπνο, προϊόντα. Γι’ αυτό
-            βλέπει κάθε περιστατικό ολιστικά, όχι μόνο «την πληγή».
-          </p>
-
-          <ul class="doctor-list">
-            <li>Μέλος Ελληνικής & Ευρωπαϊκής Δερματολογικής Εταιρείας</li>
-            <li>Συμμετοχή σε διεθνή συνέδρια & workshops αισθητικής</li>
-            <li>Ενημέρωση για τις πιο πρόσφατες θεραπείες & πρωτόκολλα</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- MINI FAQ -->
-    <section class="section">
-      <div class="shell mini-faq">
-        <div class="mini-faq-item">
-          <h3>Χρειάζεται παραπεμπτικό;</h3>
-          <p>
-            Όχι. Μπορείς να κλείσεις απευθείας ραντεβού, με ή χωρίς ιδιωτική
-            ασφάλιση.
-          </p>
-        </div>
-        <div class="mini-faq-item">
-          <h3>Γίνονται θεραπείες την ίδια μέρα;</h3>
-          <p>
-            Σε πολλές περιπτώσεις ναι, εφόσον το επιτρέπει η διάγνωση και είσαι
-            ενημερωμένος/η για το κόστος και τη φροντίδα μετά.
-          </p>
-        </div>
-        <div class="mini-faq-item">
-          <h3>Προσφέρετε online συμβουλευτική;</h3>
-          <p>
-            Μπορεί να γίνει αρχική εκτίμηση με φωτογραφίες, αλλά η κλινική
-            εξέταση είναι απαραίτητη για ολοκληρωμένη διάγνωση.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-contact">
-      <div class="shell contact-grid">
-        <div class="contact-info">
-          <h2>Κλείσε ραντεβού</h2>
-          <p>
-            Γράψε μας λίγες γραμμές για το δέρμα σου και θα επικοινωνήσουμε
-            μαζί σου για να βρούμε την κατάλληλη ημέρα & ώρα.
-          </p>
-
-          <div class="contact-block">
-            <h3>Στοιχεία ιατρείου</h3>
-            <p>Οδός Παραδείγματος 12, Κέντρο, Αθήνα</p>
-            <p>Τηλέφωνο: <a href="tel:2100000000">210 000 0000</a></p>
-            <p>Email: info@dermcareclinic.gr</p>
-          </div>
-
-          <div class="contact-block">
-            <h3>Ωράριο</h3>
-            <p>Δευτέρα – Παρασκευή: 10:00 – 19:00</p>
-            <p>Σάββατο: κατόπιν ραντεβού</p>
-          </div>
-        </div>
-
-        <form class="contact-form">
-          <div class="field">
-            <label for="name">Ονοματεπώνυμο</label>
-            <input id="name" type="text" placeholder="Π.χ. Μαρία Παπαδοπούλου" />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="name@example.com" />
-          </div>
-          <div class="field">
-            <label for="phone">Τηλέφωνο</label>
-            <input id="phone" type="tel" placeholder="Π.χ. 69X XXX XXXX" />
-          </div>
-          <div class="field">
-            <label for="concern">Τι σε απασχολεί περισσότερο;</label>
-            <select id="concern">
-              <option>Επιλογή...</option>
-              <option>Ακμή / ουλές</option>
-              <option>Ερυθρότητα / ευαισθησία</option>
-              <option>Έλεγχος σπίλων</option>
-              <option>Αισθητική θεραπεία (botox, filler κ.λπ.)</option>
-              <option>Άλλο</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Μήνυμα</label>
-            <textarea id="message" rows="4" placeholder="Πες μας λίγα λόγια για το ιστορικό και τι θα ήθελες να βελτιώσεις."></textarea>
-          </div>
-          <button type="submit" class="btn-primary full">Αποστολή αιτήματος</button>
-          <p class="form-note">
-            Με την αποστολή της φόρμας δεν κλείνεται αυτόματα ραντεβού. Θα
-            επικοινωνήσουμε μαζί σου για επιβεβαίωση.
-          </p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <p class="footer-brand">Derm<span>Care</span> Clinic</p>
-      <p class="footer-text">
-        Demo site για portfolio. Το περιεχόμενο είναι ενδεικτικό και δεν
-        αντικαθιστά την ιατρική εξέταση.
-      </p>
-      <p class="footer-meta">© 2025 DermCare Clinic · Όλα τα δικαιώματα διατηρούνται.</p>
-    </div>
-  </footer>
-
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const body = document.body;
-
-    navToggle.addEventListener('click', () => {
-      body.classList.toggle('nav-open');
-    });
-
-    document.querySelectorAll('.nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        body.classList.remove('nav-open');
-      });
-    });
-  </script>
-</body>
+      if (navToggle) {
+        navToggle.addEventListener("click", () => {
+          body.classList.toggle("nav-open");
+        });
+      }
+    </script>
+  </body>
 </html>
