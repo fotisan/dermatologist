@@ -102,7 +102,7 @@ a {
   color: var(--accent-2);
 }
 
-/* NAV */
+/* NAV (mobile overlay) */
 .nav {
   position: fixed;
   inset: 0;
@@ -114,6 +114,7 @@ a {
   transition: 0.25s ease;
 }
 
+/* MENU LIST */
 .nav ul {
   list-style: none;
   display: flex;
@@ -140,6 +141,7 @@ a {
   background: rgba(255, 255, 255, 0.06);
 }
 
+/* HAMBURGER */
 .nav-toggle {
   width: 44px;
   height: 44px;
@@ -163,12 +165,14 @@ a {
   transition: 0.2s ease;
 }
 
+/* OPEN STATE */
 body.nav-open .nav {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
+/* Burger -> X */
 body.nav-open .nav-toggle span:nth-child(1) {
   transform: translateY(3px) rotate(45deg);
 }
@@ -177,7 +181,7 @@ body.nav-open .nav-toggle span:nth-child(2) {
   transform: translateY(-3px) rotate(-45deg);
 }
 
-/* NAV CLOSE (mobile/tablet) */
+/* ✅ Small X inside the opened menu (mobile/tablet) */
 .nav-close {
   position: absolute;
   top: 0.75rem;
@@ -200,12 +204,6 @@ body.nav-open .nav-toggle span:nth-child(2) {
 
 .nav-close:hover {
   background: rgba(2, 6, 23, 0.75);
-}
-
-@media (min-width: 720px) {
-  .nav-close {
-    display: none;
-  }
 }
 
 /* HERO */
@@ -387,7 +385,7 @@ body.nav-open .nav-toggle span:nth-child(2) {
   font-size: 0.9rem;
 }
 
-/* CARDS / SECTIONS */
+/* CARDS */
 .card {
   border-radius: var(--radius);
   background: var(--card);
@@ -412,6 +410,7 @@ body.nav-open .nav-toggle span:nth-child(2) {
   line-height: 1.6;
 }
 
+/* AESTHETIC */
 .aesthetic-layout {
   display: grid;
   gap: 1.2rem;
@@ -471,6 +470,7 @@ body.nav-open .nav-toggle span:nth-child(2) {
   font-size: 0.9rem;
 }
 
+/* STEPS */
 .steps {
   display: grid;
   gap: 1rem;
@@ -650,6 +650,7 @@ textarea {
   .nav {
     position: static;
     inset: auto;
+    top: auto;
     background: transparent;
     transform: none;
     opacity: 1;
@@ -677,6 +678,11 @@ textarea {
   }
 
   .nav-toggle {
+    display: none;
+  }
+
+  /* hide the small X on desktop */
+  .nav-close {
     display: none;
   }
 
