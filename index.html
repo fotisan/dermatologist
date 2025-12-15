@@ -18,6 +18,7 @@
         <a href="#top" class="logo">Derm<span>Care</span></a>
 
         <nav class="nav" id="site-nav" aria-label="Main navigation">
+          <!-- Small X (mobile/tablet only) -->
           <button class="nav-close" type="button" aria-label="Close menu">×</button>
 
           <ul>
@@ -98,9 +99,7 @@
 
               <div class="hero-card-cta">
                 <a class="btn small" href="#contact">Request appointment</a>
-                <p class="mini">
-                  Insurance accepted • Virtual consults available
-                </p>
+                <p class="mini">Insurance accepted • Virtual consults available</p>
               </div>
             </div>
           </div>
@@ -112,9 +111,7 @@
         <div class="shell">
           <div class="section-head">
             <h2>Skin concerns we treat</h2>
-            <p>
-              Evidence-based care with a minimal, elegant plan that fits your schedule.
-            </p>
+            <p>Evidence-based care with a minimal, elegant plan that fits your schedule.</p>
           </div>
 
           <div class="conditions-grid">
@@ -146,9 +143,7 @@
         <div class="shell">
           <div class="section-head">
             <h2>Subtle aesthetics</h2>
-            <p>
-              Natural results that still look like you — just more rested.
-            </p>
+            <p>Natural results that still look like you — just more rested.</p>
           </div>
 
           <div class="aesthetic-layout">
@@ -194,9 +189,7 @@
         <div class="shell">
           <div class="section-head">
             <h2>Your treatment journey</h2>
-            <p>
-              A premium, calm process — from first visit to confident results.
-            </p>
+            <p>A premium, calm process — from first visit to confident results.</p>
           </div>
 
           <div class="steps">
@@ -224,9 +217,10 @@
         <div class="shell doctor-grid">
           <div class="doctor-photo">
             <div class="photo-frame">
+              <!-- ✅ Your image name -->
               <img
-                src="assets/doctor.jpg"
-                alt="Dermatologist portrait"
+                src="assets/doctor-portrait.png"
+                alt="Dr. Elena Rivera – Board-Certified Dermatologist"
                 loading="lazy"
               />
             </div>
@@ -235,8 +229,8 @@
           <div class="doctor-copy">
             <h2>Meet Dr. Elena Rivera</h2>
             <p class="doctor-sub">
-              Board-certified dermatologist with a refined approach to medical
-              and cosmetic care. Known for calming communication and precise treatment plans.
+              Board-certified dermatologist with a refined approach to medical and cosmetic care.
+              Known for calming communication and precise treatment plans.
             </p>
 
             <div class="doctor-badges">
@@ -301,11 +295,7 @@
 
             <label>
               Message
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Tell us what’s going on…"
-              ></textarea>
+              <textarea name="message" rows="4" placeholder="Tell us what’s going on…"></textarea>
             </label>
 
             <button class="btn primary" type="submit">Send request</button>
@@ -321,12 +311,8 @@
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p class="footer-brand">DermCare Clinic</p>
-        <p class="footer-text">
-          Demo site for portfolio use only. No medical services are provided.
-        </p>
-        <p class="footer-meta">
-          © 2025 DermCare Clinic • All rights reserved.
-        </p>
+        <p class="footer-text">Demo site for portfolio use only. No medical services are provided.</p>
+        <p class="footer-meta">© 2025 DermCare Clinic • All rights reserved.</p>
       </div>
     </footer>
 
@@ -353,12 +339,12 @@
 
       navClose?.addEventListener("click", closeNav);
 
-      // Close when tapping on empty overlay area (not the menu content)
+      // ✅ Close when tapping on the empty overlay area (NOT the menu content)
       nav?.addEventListener("click", (e) => {
         if (e.target === nav) closeNav();
       });
 
-      // Close when clicking a nav link (mobile UX)
+      // ✅ Close when clicking a nav link (mobile UX)
       navLinks.forEach((a) => a.addEventListener("click", closeNav));
 
       // ESC closes
