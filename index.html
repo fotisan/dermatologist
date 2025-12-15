@@ -5,26 +5,21 @@
     <title>DermCare Clinic – Dermatologist | New York City</title>
     <meta
       name="description"
-      content="Medical & cosmetic dermatology with a gentle, personalized approach. Acne, redness, allergies, mole checks and subtle aesthetics."
+      content="Medical & cosmetic dermatology with a gentle, premium approach. Acne, redness, allergies, mole checks and subtle aesthetics."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- TOP BAR -->
-    <div class="topbar">
-      <div class="shell topbar-inner">
-        <span>Board-Certified Dermatologist | New York City</span>
-        <a href="tel:+15555555555">Tel: +15555555555</a>
-      </div>
-    </div>
 
+  <body>
     <!-- HEADER -->
     <header class="site-header">
       <div class="shell header-inner">
         <a href="#top" class="logo">Derm<span>Care</span></a>
 
-        <nav class="nav" aria-label="Main navigation">
+        <nav class="nav" id="site-nav" aria-label="Main navigation">
+          <button class="nav-close" type="button" aria-label="Close menu">×</button>
+
           <ul>
             <li><a href="#conditions">Skin concerns</a></li>
             <li><a href="#aesthetic">Aesthetic</a></li>
@@ -34,7 +29,13 @@
           </ul>
         </nav>
 
-        <button class="nav-toggle" aria-label="Open menu">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
           <span></span>
           <span></span>
         </button>
@@ -47,113 +48,94 @@
         <div class="shell hero-grid">
           <div class="hero-main">
             <div class="hero-tagline">
-              <span>Medical &amp; Cosmetic Dermatology</span>
+              <span class="dot"></span>
+              <span>Dermatology • NYC</span>
             </div>
 
-            <h1>Calm skin, not just “perfect.”</h1>
+            <h1>Clearer skin, calmer confidence.</h1>
 
-            <p class="hero-text">
-              A clinic that combines medical dermatology with thoughtful
-              cosmetic care. Personalized plans for acne, redness, aging and
-              mole checks – designed around your real life.
+            <p class="hero-sub">
+              Medical & cosmetic dermatology designed for busy professionals in New York City.
+              Acne, redness, allergies, mole checks, and subtle aesthetic treatments.
             </p>
 
             <div class="hero-actions">
-              <a href="#contact" class="btn-primary">Book online visit</a>
-              <a href="#aesthetic" class="btn-ghost">See if it’s for you</a>
+              <a class="btn primary" href="#contact">Book a visit</a>
+              <a class="btn ghost" href="#conditions">Explore services</a>
             </div>
 
-            <div class="hero-badges">
-              <span>Adult &amp; teen acne</span>
-              <span>Skin checks &amp; moles</span>
-              <span>Botox &amp; fillers with natural results</span>
+            <div class="hero-proof">
+              <div class="proof-item">
+                <strong>4.9</strong>
+                <span>Patient rating</span>
+              </div>
+              <div class="proof-item">
+                <strong>12+</strong>
+                <span>Years experience</span>
+              </div>
+              <div class="proof-item">
+                <strong>Same-week</strong>
+                <span>Appointments</span>
+              </div>
             </div>
           </div>
 
-          <aside class="hero-side" aria-label="Online request">
-            <div class="image-slot image-hero image-triangle"></div>
-
-            <div class="hero-card">
-              <div class="hero-card-pill">Online request</div>
-              <h2 class="hero-card-title">Book an appointment without calling</h2>
-              <p class="hero-card-sub">
-                Share a few details and we’ll send you available time slots
-                within 24 hours.
-              </p>
-              <ul class="hero-card-list">
-                <li>Personal reply from the doctor</li>
-                <li>Better preparation for your first visit</li>
-              </ul>
-              <a href="#contact" class="hero-card-link">
-                Start your request &rarr;
-              </a>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <p class="hero-card-title">Next available</p>
+              <p class="hero-card-time">Thu • 10:30 AM</p>
             </div>
-          </aside>
+
+            <div class="hero-card-body">
+              <p class="hero-card-label">Most booked</p>
+
+              <div class="pill-row">
+                <span class="pill">Acne</span>
+                <span class="pill">Rosacea</span>
+                <span class="pill">Botox</span>
+                <span class="pill">Mole check</span>
+              </div>
+
+              <div class="hero-card-cta">
+                <a class="btn small" href="#contact">Request appointment</a>
+                <p class="mini">
+                  Insurance accepted • Virtual consults available
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- CONDITIONS -->
       <section class="section" id="conditions">
         <div class="shell">
-          <header class="section-head">
-            <h2>The skin concerns we see most often</h2>
+          <div class="section-head">
+            <h2>Skin concerns we treat</h2>
             <p>
-              We work every day with people who are tired of dealing with
-              long-standing skin issues and just want a clear, realistic plan.
+              Evidence-based care with a minimal, elegant plan that fits your schedule.
             </p>
-          </header>
+          </div>
 
           <div class="conditions-grid">
-            <article class="condition-card">
-              <h3>Acne &amp; scarring</h3>
-              <p>
-                Adult and teen acne, persistent breakouts, clogged pores and
-                post-inflammatory marks.
-              </p>
-              <ul>
-                <li>Combination of topical and oral treatments</li>
-                <li>Customized chemical peels</li>
-                <li>Goal: calm, predictable skin all month long</li>
-              </ul>
+            <article class="card">
+              <h3>Acne & breakouts</h3>
+              <p>Target the cause with modern regimens, not harsh routines.</p>
             </article>
 
-            <article class="condition-card">
-              <h3>Redness &amp; sensitivity</h3>
-              <p>
-                Rosacea, visible vessels, easily irritated skin or reactions to
-                products and masks.
-              </p>
-              <ul>
-                <li>Detailed evaluation of vascular changes</li>
-                <li>Home care routine tailored to your skin</li>
-                <li>Guidance for gentle everyday skincare</li>
-              </ul>
+            <article class="card">
+              <h3>Redness & rosacea</h3>
+              <p>Reduce flare-ups and sensitivity with gentle, structured care.</p>
             </article>
 
-            <article class="condition-card">
-              <h3>Mole checks &amp; prevention</h3>
-              <p>
-                Full-body skin exams, mole mapping and risk assessment based on
-                your history.
-              </p>
-              <ul>
-                <li>High-resolution dermoscopy</li>
-                <li>Clinical photos to monitor changes over time</li>
-                <li>Sun-safety advice that fits your lifestyle</li>
-              </ul>
+            <article class="card">
+              <h3>Allergies & eczema</h3>
+              <p>Relief-first plans that protect your skin barrier long-term.</p>
             </article>
 
-            <article class="condition-card">
-              <h3>Dermatitis &amp; allergies</h3>
-              <p>
-                Eczema, atopic skin, contact allergies, unexplained rashes or
-                flares.
-              </p>
-              <ul>
-                <li>Investigation of potential triggers</li>
-                <li>Step-by-step treatment and skin-care plan</li>
-                <li>Recommendations for safe products</li>
-              </ul>
+            <article class="card">
+              <h3>Mole & cancer checks</h3>
+              <p>Thorough screenings with clear guidance and follow-up.</p>
             </article>
           </div>
         </div>
@@ -161,94 +143,78 @@
 
       <!-- AESTHETIC -->
       <section class="section section-soft" id="aesthetic">
-        <div class="shell aesthetic-layout">
-          <div class="aesthetic-copy">
-            <header class="section-head align-left">
-              <h2>Aesthetic dermatology without the drama</h2>
-              <p>
-                We treat lines and laxity like any other medical concern: with
-                moderation, a plan and the goal of a face that simply looks
-                rested.
-              </p>
-            </header>
-
-            <div class="pill-row">
-              <span class="pill">Botox for expression, not “frozen” faces</span>
-              <span class="pill">Filler only where it truly helps</span>
-            </div>
-
-            <ul class="aesthetic-list">
-              <li>
-                <strong>Short assessment, not a sales pitch.</strong> Before any
-                aesthetic treatment, we explain what actually suits your
-                features.
-              </li>
-              <li>
-                <strong>Small adjustments, natural results.</strong> The goal is
-                to hear “you look well,” not “what did you do?”.
-              </li>
-              <li>
-                <strong>Combined with medical care.</strong> We address
-                sensitivity, acne and pigmentation at the same time.
-              </li>
-            </ul>
-
-            <p class="aesthetic-caption">
-              Informed, gradual changes – no surprises, no overdone results.
+        <div class="shell">
+          <div class="section-head">
+            <h2>Subtle aesthetics</h2>
+            <p>
+              Natural results that still look like you — just more rested.
             </p>
           </div>
 
-          <div class="image-slot image-aesthetic image-triangle"></div>
+          <div class="aesthetic-layout">
+            <div class="aesthetic-copy">
+              <ul class="checklist">
+                <li>Botox & neuromodulators</li>
+                <li>Dermal fillers (subtle sculpting)</li>
+                <li>Chemical peels</li>
+                <li>Skin rejuvenation plans</li>
+              </ul>
+
+              <a class="btn primary" href="#contact">Ask about a plan</a>
+            </div>
+
+            <div class="aesthetic-card">
+              <p class="aesthetic-title">Approach</p>
+              <p class="aesthetic-text">
+                Conservative dosing, balanced proportions, and clear aftercare —
+                designed for high-trust outcomes.
+              </p>
+
+              <div class="aesthetic-metrics">
+                <div class="metric">
+                  <strong>20–30</strong>
+                  <span>min consult</span>
+                </div>
+                <div class="metric">
+                  <strong>0</strong>
+                  <span>pressure sales</span>
+                </div>
+                <div class="metric">
+                  <strong>1</strong>
+                  <span>clean plan</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- JOURNEY -->
       <section class="section" id="journey">
         <div class="shell">
-          <header class="section-head">
-            <h2>What it’s like to start with us</h2>
+          <div class="section-head">
+            <h2>Your treatment journey</h2>
             <p>
-              We want you to know exactly what to expect – from the first
-              message to your follow-up.
+              A premium, calm process — from first visit to confident results.
             </p>
-          </header>
+          </div>
 
-          <div class="journey-grid">
-            <article class="step">
-              <div class="step-number">1</div>
-              <h3>Brief online snapshot</h3>
-              <p>
-                You fill out a short form, optionally add photos, and we suggest
-                the most suitable type of visit.
-              </p>
-            </article>
-
-            <article class="step">
-              <div class="step-number">2</div>
-              <h3>First in-office visit</h3>
-              <p>
-                Clinical exam, medical history and, when needed, dermoscopy or
-                further work-up.
-              </p>
-            </article>
-
-            <article class="step">
-              <div class="step-number">3</div>
-              <h3>Personalized care plan</h3>
-              <p>
-                Written instructions, treatment roadmap and products that match
-                your schedule and tolerance.
-              </p>
-            </article>
-
-            <article class="step">
-              <div class="step-number">4</div>
-              <h3>Follow-up &amp; adjustments</h3>
-              <p>
-                Check-ins by email or phone and follow-up visits so we can
-                adjust your plan as your skin changes.
-              </p>
-            </article>
+          <div class="steps">
+            <div class="step">
+              <span class="step-num">01</span>
+              <h3>Consultation</h3>
+              <p>We listen, examine, and define what “success” means for you.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">02</span>
+              <h3>Plan</h3>
+              <p>A clear regimen with priorities, timeline, and expectations.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">03</span>
+              <h3>Follow-up</h3>
+              <p>Adjustments, support, and a plan that remains sustainable.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -256,184 +222,105 @@
       <!-- DOCTOR -->
       <section class="section section-soft" id="doctor">
         <div class="shell doctor-grid">
-          <div class="image-slot image-doctor image-triangle"></div>
+          <div class="doctor-photo">
+            <div class="photo-frame">
+              <img
+                src="assets/doctor.jpg"
+                alt="Dermatologist portrait"
+                loading="lazy"
+              />
+            </div>
+          </div>
 
           <div class="doctor-copy">
-            <header class="section-head align-left">
-              <h2>Anna Papadopoulos, MD</h2>
-              <p class="doctor-role">
-                Board-Certified Dermatologist
-              </p>
-            </header>
-
-            <p>
-              Dr. Papadopoulos is a board-certified dermatologist with training
-              in Europe and the U.S. and extensive experience in private
-              practice. Her philosophy: every skin is a long-term record – it
-              needs observation, time and consistency.
+            <h2>Meet Dr. Elena Rivera</h2>
+            <p class="doctor-sub">
+              Board-certified dermatologist with a refined approach to medical
+              and cosmetic care. Known for calming communication and precise treatment plans.
             </p>
 
-            <ul class="doctor-list">
-              <li>Special interest in adult acne and complex cases</li>
-              <li>Experience with sensitive and rosacea-prone skin</li>
-              <li>Subtle aesthetic treatments with a natural finish</li>
-            </ul>
+            <div class="doctor-badges">
+              <span class="badge">Board-Certified</span>
+              <span class="badge">NYC</span>
+              <span class="badge">Virtual Consults</span>
+            </div>
 
-            <p>
-              Her goal is calm, functional skin you can live in comfortably – not
-              a one-off “perfect” photo.
-            </p>
+            <a class="btn primary" href="#contact">Request an appointment</a>
           </div>
-        </div>
-      </section>
-
-      <!-- FAQ STRIP -->
-      <section class="section">
-        <div class="shell mini-faq">
-          <article class="mini-faq-item">
-            <h3>Do I need a referral?</h3>
-            <p>
-              No. You can book directly, whether you’re using insurance or
-              self-pay.
-            </p>
-          </article>
-          <article class="mini-faq-item">
-            <h3>Can treatment start the same day?</h3>
-            <p>
-              In many cases yes, as long as it’s medically appropriate and fits
-              with any current medications.
-            </p>
-          </article>
-          <article class="mini-faq-item">
-            <h3>Do you offer virtual visits?</h3>
-            <p>
-              For follow-ups and select issues, tele-dermatology may be an
-              option when it’s safe and clinically appropriate.
-            </p>
-          </article>
         </div>
       </section>
 
       <!-- CONTACT -->
-      <section class="section section-contact" id="contact">
-        <div class="shell">
-          <header class="section-head align-left">
+      <section class="section" id="contact">
+        <div class="shell contact-grid">
+          <div class="contact-copy">
             <h2>Request an appointment</h2>
             <p>
-              Share a few details about your skin and we’ll reach out to find a
-              day and time that works for you.
+              Leave your details and we’ll confirm availability within 24 hours.
+              For urgent medical concerns, contact your local emergency services.
             </p>
-          </header>
 
-          <div class="contact-grid">
-            <div class="contact-info">
-              <div class="contact-block">
-                <h3>Location</h3>
-                <p>
-                  123 Example Street, Midtown<br />
-                  New York, NY 10001
-                </p>
+            <div class="contact-cards">
+              <div class="mini-card">
+                <strong>Location</strong>
+                <span>Manhattan, NYC</span>
               </div>
-
-              <div class="contact-block">
-  <h3>Contact</h3>
-  <p>
-    Phone: <a href="tel:+15555555555">(555) 555-5555</a><br />
-    Email:
-    <a href="mailto:info@dermcareclinic.com">info@dermcareclinic.com</a>
-  </p>
-</div>
-
-
-              <div class="contact-block">
-                <h3>Office hours</h3>
-                <p>
-                  Monday – Friday: 10:00 AM – 7:00 PM<br />
-                  Saturday: by appointment only
-                </p>
+              <div class="mini-card">
+                <strong>Phone</strong>
+                <span>(212) 555-0199</span>
               </div>
-
-              <p class="contact-note">
-                Demo site for portfolio purposes. Content is illustrative and
-                does not replace a medical evaluation.
-              </p>
+              <div class="mini-card">
+                <strong>Email</strong>
+                <span>hello@dermcareclinic.com</span>
+              </div>
             </div>
-
-            <form class="contact-form">
-              <div class="field">
-                <label for="name">Full name</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  autocomplete="name"
-                  placeholder="e.g. Maria Papadopoulos"
-                />
-              </div>
-
-              <div class="field field-inline">
-                <div>
-                  <label for="email">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    placeholder="you@example.com"
-                  />
-                </div>
-                <div>
-                  <label for="phone">Phone</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autocomplete="tel"
-                    placeholder="e.g. 6xx xxx xxxx"
-                  />
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="reason">What’s your main concern?</label>
-                <select id="reason" name="reason">
-                  <option value="">Choose an option</option>
-                  <option value="acne">Acne / breakouts</option>
-                  <option value="redness">Redness / sensitivity</option>
-                  <option value="moles">Moles / skin check</option>
-                  <option value="aesthetic">Aesthetic treatment</option>
-                  <option value="other">Something else</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label for="message">Message (optional)</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  placeholder="You can briefly describe what’s bothering you or ask a specific question."
-                ></textarea>
-              </div>
-
-              <p class="form-note">
-                Submitting this form does not automatically schedule an
-                appointment. We’ll contact you to confirm a date and time.
-              </p>
-
-              <button type="submit" class="btn-primary full">
-                Send request
-              </button>
-            </form>
           </div>
+
+          <form class="form card" action="#" method="post">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+
+            <label>
+              What do you need help with?
+              <select name="reason" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Acne / breakouts</option>
+                <option>Redness / rosacea</option>
+                <option>Eczema / allergies</option>
+                <option>Mole check</option>
+                <option>Botox / aesthetics</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Tell us what’s going on…"
+              ></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send request</button>
+
+            <p class="form-note">
+              By submitting, you agree to be contacted about your request.
+            </p>
+          </form>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <p class="footer-brand">Derm<span>Care</span> Clinic</p>
+        <p class="footer-brand">DermCare Clinic</p>
         <p class="footer-text">
           Demo site for portfolio use only. No medical services are provided.
         </p>
@@ -444,14 +331,40 @@
     </footer>
 
     <script>
-      const navToggle = document.querySelector(".nav-toggle");
       const body = document.body;
+      const nav = document.querySelector(".nav");
+      const navToggle = document.querySelector(".nav-toggle");
+      const navClose = document.querySelector(".nav-close");
+      const navLinks = document.querySelectorAll(".nav a");
 
-      if (navToggle) {
-        navToggle.addEventListener("click", () => {
-          body.classList.toggle("nav-open");
-        });
-      }
+      const openNav = () => {
+        body.classList.add("nav-open");
+        navToggle?.setAttribute("aria-expanded", "true");
+      };
+
+      const closeNav = () => {
+        body.classList.remove("nav-open");
+        navToggle?.setAttribute("aria-expanded", "false");
+      };
+
+      navToggle?.addEventListener("click", () => {
+        body.classList.contains("nav-open") ? closeNav() : openNav();
+      });
+
+      navClose?.addEventListener("click", closeNav);
+
+      // Close when tapping on empty overlay area (not the menu content)
+      nav?.addEventListener("click", (e) => {
+        if (e.target === nav) closeNav();
+      });
+
+      // Close when clicking a nav link (mobile UX)
+      navLinks.forEach((a) => a.addEventListener("click", closeNav));
+
+      // ESC closes
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeNav();
+      });
     </script>
   </body>
 </html>
